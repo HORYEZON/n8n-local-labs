@@ -1,4 +1,4 @@
-⚙️ FULL CLI COMMANDS (LOCAL N8N SETUP + BACKUP + UPDATE) ⚙️
+# FULL CLI COMMANDS (LOCAL N8N SETUP + BACKUP + UPDATE)
 
 🚀 1. Create volume + run n8n
 
@@ -56,7 +56,7 @@ Restore:
       docker run --rm -v n8n_data:/data -v %cd%:/backup alpine ^
         sh -c "tar xzf /backup/n8n_backup.tar.gz -C /data"
 
-⚡ QUICK CHEAT SHEET
+## ⚡ QUICK CHEAT SHEET
 
       docker volume create n8n_data
       docker run -it --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
@@ -67,7 +67,7 @@ Restore:
 
       docker pull docker.n8n.io/n8nio/n8n
 
-REMINDER
+##  ⚠️ REMINDER
 
 🧠 Important reminder (because future-you will forget)
       • Your workflows live in n8n_data
@@ -80,7 +80,7 @@ If you want next level setup, I can convert this into:
       • auto backup script
       • one-command start/stop system
 
-DOCKER CORE CONCEPTS
+## 🐋 DOCKER CORE CONCEPTS
 
       | Concept   | Simple Description                            | Analogy                               | What happens if you delete it                 |
       | --------- | --------------------------------------------- | ------------------------------------- | --------------------------------------------- |
@@ -88,18 +88,18 @@ DOCKER CORE CONCEPTS
       | Container | Running instance of the image                 | A cooking session using the recipe 👨‍🍳 | App stops, but data may still exist elsewhere |
       | Volume    | Persistent storage for data                   | A hard drive / notebook 💾            | ⚠️ Data is lost if deleted                   |
 
-🧠 Final mental stack
+##  🧠 FINAL MENTAL STACK
 
       IMAGE      → blueprint
       CONTAINER  → running app
       VOLUME     → saved data
       NETWORK    → communication
 
-💀 One-liner truth
+### 💀 One-liner truth
 
       Image builds it, container runs it, volume remembers it, network connects it.
 
-⚠️ Why people get confused
+### ⚠️ Why people get confused
 
       Because in Docker:
 
@@ -107,7 +107,7 @@ DOCKER CORE CONCEPTS
       deleting volume ❌ wipes everything
       image can be redownloaded anytime ❌ no data loss
 
-SUMMARY COMMANDS
+# SUMMARY COMMANDS
 
 • RUN N8N DOCKER LOCALLY
 
