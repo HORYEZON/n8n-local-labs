@@ -1,7 +1,4 @@
-
-============================================================================
-=====   ⚙️ FULL CLI COMMANDS (LOCAL N8N SETUP + BACKUP + UPDATE) ⚙️   =====
-============================================================================
+⚙️ FULL CLI COMMANDS (LOCAL N8N SETUP + BACKUP + UPDATE) ⚙️
 
 🚀 1. Create volume + run n8n
 
@@ -70,9 +67,7 @@ Restore:
 
       docker pull docker.n8n.io/n8nio/n8n
 
-========================
-=====   REMINDER   =====
-========================
+REMINDER
 
 🧠 Important reminder (because future-you will forget)
       • Your workflows live in n8n_data
@@ -85,9 +80,7 @@ If you want next level setup, I can convert this into:
       • auto backup script
       • one-command start/stop system
 
-====================================
-=====   DOCKER CORE CONCEPTS   =====
-====================================
+DOCKER CORE CONCEPTS
 
       | Concept   | Simple Description                            | Analogy                               | What happens if you delete it                 |
       | --------- | --------------------------------------------- | ------------------------------------- | --------------------------------------------- |
@@ -114,9 +107,7 @@ If you want next level setup, I can convert this into:
       deleting volume ❌ wipes everything
       image can be redownloaded anytime ❌ no data loss
 
-================================
-=====   SUMMARY COMMANDS   =====
-================================
+SUMMARY COMMANDS
 
 • RUN N8N DOCKER LOCALLY
 
